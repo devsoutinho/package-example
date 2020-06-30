@@ -72,6 +72,7 @@ $ npm login --registry=https://npm.pkg.github.com
 ## How to use a private package?
 
 - ...
+- ...
 
 # Extras
 
