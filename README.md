@@ -57,6 +57,22 @@ $ npm login --registry=https://npm.pkg.github.com
 }
 ```
 
-## Extras
+- Then run `npm publish`
+
+## How to use the library?
+
+- Create a .npmrc file, we need to use GitHub registry, only when we download our packages from GitHub
+```js
+// .npmrc
+@organization:registry=https://npm.pkg.github.com/
+```
+
+- After it just type: `yarn add @organization/package-name`
+
+## How to use a private package?
+
+- ...
+
+# Extras
 
 - [Publishing multiple packages to the same repository](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#publishing-multiple-packages-to-the-same-repository)
