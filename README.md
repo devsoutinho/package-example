@@ -70,9 +70,9 @@ $ npm login --registry=https://npm.pkg.github.com
 - After it just type: `yarn add @organization/package-name`
 
 ## How to use a private package?
+- The repository visibility defines if it's public or private
+- If your repository is private, the users must be part of the organization to have access to download it throught github registry previously configured in `.npmrc`
 
-- ...
-- ...
 
 # Extras
 
