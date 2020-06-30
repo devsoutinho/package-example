@@ -14,6 +14,7 @@ const plugins = [
     babelHelpers: 'inline',
     exclude: 'node_modules/**',
   }),
+  resolve(),
   commonjs({
     include: /node_modules/,
   }),
@@ -29,6 +30,13 @@ export default [
         dir: 'lib',
         entryFileNames: '[name].js',
         format: 'cjs',
+        exports: 'named',
+        sourcemap: true,
+      },
+      {
+        dir: 'lib',
+        entryFileNames: '[name].esm.js',
+        format: 'esm',
         exports: 'named',
         sourcemap: true,
       },
