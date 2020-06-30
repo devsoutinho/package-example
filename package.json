@@ -1,7 +1,6 @@
 {
-  "name": "package-example",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@devsoutinho/package-example",
+  "version": "0.0.1",
   "peerDependencies": {
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -11,6 +10,13 @@
   "files": [
     "lib/components/Title"
   ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:devsoutinho/package-example.git"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf ./lib && rollup -c",
