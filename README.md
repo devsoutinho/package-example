@@ -79,7 +79,7 @@ $ npm login --registry=https://npm.pkg.github.com
 - All projects that installs from an organization must have configured a .npmrc file
 ```sh
 # .npmrc
-@devsoutinho:registry=https://npm.pkg.github.com/
+@organizxation:registry=https://npm.pkg.github.com/
 ```
 
 - On CI/CD tools in first step after the contained up an run, create .npmrc with access to GitHub credentials
