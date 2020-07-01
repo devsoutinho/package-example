@@ -74,6 +74,19 @@ $ npm login --registry=https://npm.pkg.github.com
 - If your repository is private, the users must be part of the organization to have access to download it throught github registry previously configured in `.npmrc`
 
 
+## How to download GitHub Registry Packages on CI/CD tools?
+
+- All projects that installs from an organization must have configured a .npmrc file
+```sh
+# .npmrc
+@devsoutinho:registry=https://npm.pkg.github.com/
+```
+
+- On CI/CD tools in first step after the contained up an run, create .npmrc with access to GitHub credentials
+```sh
+echo "//npm.pkg.github.com/:_authToken=$GH_TOKEN"> ~/.npmrc
+```
+
 # Extras
 
 - [Publishing multiple packages to the same repository](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#publishing-multiple-packages-to-the-same-repository)
